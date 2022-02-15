@@ -18,6 +18,10 @@
   },
   "plugins": ["eslint-plugin-import-helpers"],
   "rules": {
+    "@typescript-eslint/no-empty-function": ["warn"],
+    "react/require-default-props": "off", // Since we do not use prop-types
+    "react-hooks/rules-of-hooks": "error", // 檢查 Hook 的規則
+    "react-hooks/exhaustive-deps": "error", // 檢查 useEffect 的相依性
     "@typescript-eslint/explicit-module-boundary-types": "off", // Allow us to not explicit specify return type for everything
     "react/jsx-uses-react": "off", // If you are using eslint-plugin-react, the react/jsx-uses-react and react/react-in-jsx-scope rules are no longer necessary and can be turned off or removed.
     "import/extensions": [
